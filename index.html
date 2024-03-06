@@ -10,10 +10,26 @@
 <body>
     <main>
         <div class="background">
-            <div class="color"></div>
-            <input class="colorInput" type="text">
-            <br>
-            <button class="btn">Clear</button>
+            <div id="solidcol">
+                <div class="color"></div>
+                <input class="colorInput" type="text" autocomplete="off">
+                <br>
+                <button class="btn">Clear</button>
+            </div>
+
+            <div id="gradientcol">
+                <div class="gradbox"></div>
+                <input class="gradInput1" type="text" autocomplete="off">
+                <p>to</p>
+                <input class="gradInput2" type="text" autocomplete="off">
+                <br>
+                <button class="Gradbtn">Clear</button>
+            </div>
+
+            <div class="selector">
+                <label><input type="radio" autocomplete="off" checked="checked" id="solid" value="Solid" name="type" onclick="showSolid();">Solid Color</label>
+                <label><input type="radio" autocomplete="off" id="gradient" value="Gradient" name="type" onclick="showGrad();">Gradient Color</label>
+            </div>
         </div>
     </main>
     
